@@ -12,7 +12,7 @@ scalaVersion := "2.12.1"
 
 libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.1",
-  "net.scalapro" %%% "sortable-js-facade" % "0.1-SNAPSHOT"
+  "net.scalapro" %%% "sortable-js-facade" % "0.1.1-SNAPSHOT"
 )
 
 jsDependencies ++= Seq(

@@ -1,5 +1,5 @@
 package examples
-//import net.scalapro.sortable.{EventM, Sortable}
+import net.scalapro.sortable.{EventM, Sortable}
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSExportTopLevel
