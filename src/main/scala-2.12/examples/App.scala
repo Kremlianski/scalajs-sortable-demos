@@ -1,10 +1,9 @@
 package examples
-import net.scalapro.sortable.{EventM, Sortable}
+import net.scalapro.sortable.Sortable
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSExportTopLevel
 import org.scalajs.dom
-import org.scalajs.dom._
 
 object App {
   @JSExportTopLevel("main")
