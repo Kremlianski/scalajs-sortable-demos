@@ -4,7 +4,9 @@
     <title>Example Scala.js application</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript" src="../scalajs-sortable-demos-jsdeps.js"></script>
+    <!--<script type="text/javascript" src="../scalajs-sortable-demos-jsdeps.js"></script>-->
+    <script src="http://rubaxa.github.io/Sortable/Sortable.js"></script>
+
     <style>
 body {
 padding: 50px;
@@ -58,10 +60,31 @@ h3 {
         <li>qux 1</li>
     </ul>
 
+    <h2>Example 3</h2>
+    <h3>Source group</h3>
+    <ul id="foo1">
+        <li>foo 1</li>
+        <li>foo 2</li>
+        <li>foo 3</li>
+    </ul>
+    <h3>Source/ Target group</h3>
+    <ul id="bar1">
+        <li>bar 1</li>
+        <li>bar 2</li>
+        <li>bar 3</li>
+    </ul>
+    <h3>Source/ Target group</h3>
+    <ul id="qux1">
+        <li>qux 1</li>
+    </ul>
+
+
+
+
 
 </div>
 
-<script type="text/javascript" src="../scalajs-sortable-demos-opt.js"></script>
+<script type="text/javascript" src="../scalajs-sortable-demos-fastopt.js"></script>
 <script type="text/javascript" src="/workbench.js"></script>
 <script>
     main();
