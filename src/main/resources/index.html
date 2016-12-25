@@ -6,6 +6,27 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <script type="text/javascript" src="../scalajs-sortable-demos-jsdeps.js"></script>
     <style>
+body {
+padding: 50px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #eee;
+  margin: 1px;
+  padding: 5px 10px;
+}
+
+.sortable-ghost {
+  opacity: .6;
+}
+h3 {
+  font-size: 14px;
+
+}
     </style>
 </head>
 <body>
@@ -20,18 +41,19 @@
 </div>
 <div id="example2">
     <h2>Example 2</h2>
+    <h3>Source group</h3>
     <ul id="foo">
         <li>foo 1</li>
         <li>foo 2</li>
         <li>foo 3</li>
     </ul>
-
+    <h3>Source group</h3>
     <ul id="bar">
         <li>bar 1</li>
         <li>bar 2</li>
         <li>bar 3</li>
     </ul>
-
+    <h3>Target group</h3>
     <ul id="qux">
         <li>qux 1</li>
     </ul>
@@ -39,7 +61,7 @@
 
 </div>
 
-<script type="text/javascript" src="../scalajs-sortable-demos-fastopt.js"></script>
+<script type="text/javascript" src="../scalajs-sortable-demos-opt.js"></script>
 <script type="text/javascript" src="/workbench.js"></script>
 <script>
     main();
