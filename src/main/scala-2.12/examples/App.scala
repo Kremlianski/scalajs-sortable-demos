@@ -56,6 +56,30 @@ object App {
 
     )
     )
+    // example 4
+    // sorting
+    new Sortable(dom.document.getElementById("sortTrue"), js.Dictionary(
+      "group" -> "sorting",
+      "sort" -> true,
+      "animation" -> 200
 
+    )
+    )
+    new Sortable(dom.document.getElementById("sortFalse"), js.Dictionary(
+      "group" -> "sorting",
+      "sort" -> false,
+      "animation" -> 200
+
+    )
+    )
+
+    // example 5
+    // delay
+    new Sortable(dom.document.getElementById("list"), js.Dictionary(
+
+      "delay" -> 400
+
+    )
+    )
   }
 }

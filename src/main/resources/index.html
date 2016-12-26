@@ -24,6 +24,7 @@ li {
   margin: 1px;
   padding: 5px 10px;
   cursor: move;
+  cursor: -webkit-grabbing;
 }
 
 .sortable-ghost {
@@ -32,6 +33,10 @@ li {
 h3 {
   font-size: 14px;
 
+}
+.list-group-item {
+  cursor: move;
+  cursor: -webkit-grabbing;
 }
     </style>
 </head>
@@ -82,10 +87,31 @@ h3 {
         <li>qux 1</li>
     </ul>
 
+    <h2>Example 4</h2>
 
+    <h3>sort: true</h3>
 
+    <!-- sort: true -->
+    <div id="sortTrue" class="list-group">
+        <div class="list-group-item">foo</div>
+        <div class="list-group-item">bar</div>
+        <div class="list-group-item">baz</div>
+    </div>
 
+    <h3>sort: false</h3>
+    <!-- sort: false -->
+    <div id="sortFalse" class="list-group">
+        <div class="list-group-item">qux</div>
+        <div class="list-group-item">quux</div>
+    </div>
 
+    <h2>Example 5</h2>
+    <h3>Delay</h3>
+    <div id="list" class="list-group">
+        <div class="list-group-item">foo</div>
+        <div class="list-group-item">bar</div>
+        <div class="list-group-item">baz</div>
+    </div>
 </div>
 
 <script type="text/javascript" src="../scalajs-sortable-demos-fastopt.js"></script>
