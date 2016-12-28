@@ -138,7 +138,6 @@ object App {
     // chosen
     new Sortable(dom.document.getElementById("chosenList"), js.Dictionary(
       "ghostClass" -> "ghost1",
-      "delay" -> 50,
       "chosenClass" -> "chosen",
       "animation" -> 200
     ))
