@@ -9,7 +9,7 @@
 
     <style>
 body {
-padding: 50px;
+  padding: 50px;
 }
 ul {
 
@@ -37,6 +37,46 @@ h3 {
 .list-group-item {
   cursor: move;
   cursor: -webkit-grabbing;
+}
+#listWithHandle li:not(.my-handle) {
+    cursor: auto;
+
+}
+.my-handle {
+   cursor: move;
+   cursor: -webkit-grabbing;
+}
+.ghost {
+  opacity: .5;
+  background: #C8EBFB;
+}
+
+.chosen {
+  color: #fff;
+  background-color: #c00;
+}
+.chosen.ghost1 {
+  color: #fff;
+  opacity: 0.2;
+  background-color: #c00;
+}
+#chosenList .list-group-item {
+    display: inline-block;
+  transition: all .5s;
+  margin: 0 0 0 0;
+  font-size: 14px;
+}
+#chosenList {
+    text-align: left;
+    font-size: 0;
+}
+.good {
+    border: 1px solid red;
+}
+
+#scrollList {
+  height: 250px;
+  overflow: hidden;
 }
     </style>
 </head>
@@ -112,6 +152,121 @@ h3 {
         <div class="list-group-item">bar</div>
         <div class="list-group-item">baz</div>
     </div>
+
+    <h2>Example 6</h2>
+    <h3>Disabled</h3>
+    <button id="switcher">disable</button>
+    <br/>  <br/>
+
+    <ul id="list1" class="list-group">
+        <li class="list-group-item">This is <a href="http://rubaxa.github.io/Sortable/">Sortable</a></li>
+        <li class="list-group-item">It works with Bootstrap...</li>
+        <li class="list-group-item">...out of the box.</li>
+        <li class="list-group-item">It has support for touch devices.</li>
+        <li class="list-group-item">Just drag some elements around.</li>
+    </ul>
+
+    <h2>Example 7</h2>
+    <h3>Handle</h3>
+    <ul id="listWithHandle">
+        <li><span class="my-handle">:::::</span> list item text one
+        <li><span class="my-handle">:::::</span> list item text two
+    </ul>
+
+    <h2>Example 8</h2>
+    <h3>Ghost</h3>
+    <div id="simpleList" class="list-group">
+        <div class="list-group-item">item 1</div>
+        <div class="list-group-item">item 2</div>
+        <div class="list-group-item">item 3</div>
+        <div class="list-group-item">item 4</div>
+        <div class="list-group-item">item 5</div>
+        <div class="list-group-item">item 6</div>
+        <div class="list-group-item">item 7</div>
+        <div class="list-group-item">item 8</div>
+    </div>
+
+    <h2>Example 9</h2>
+    <h3>Chosen</h3>
+    <div id="chosenList" class="list-group">
+        <div class="list-group-item">item 1</div>
+        <div class="list-group-item">item 2</div>
+        <div class="list-group-item">item 3</div>
+        <div class="list-group-item">item 4</div>
+        <div class="list-group-item">item 5</div>
+        <div class="list-group-item">item 6</div>
+        <div class="list-group-item">item 7</div>
+        <div class="list-group-item">item 8</div>
+        <div class="list-group-item">item 9</div>
+        <div class="list-group-item">item 10</div>
+        <div class="list-group-item">item 11</div>
+        <div class="list-group-item">item 12</div>
+        <div class="list-group-item">item 13</div>
+        <div class="list-group-item">item 14</div>
+        <div class="list-group-item">item 15</div>
+        <div class="list-group-item">item 16</div>
+        <div class="list-group-item">item 17</div>
+        <div class="list-group-item">item 18</div>
+        <div class="list-group-item">item 19</div>
+        <div class="list-group-item">item 20</div>
+    </div>
+
+    <h2>Example 10</h2>
+    <h3>force fallback</h3>
+    <ul id="foo2">
+        <li>foo 1</li>
+        <li>foo 2</li>
+        <li>foo 3</li>
+    </ul>
+
+    <h2>Example 11</h2>
+    <h3>Scroll</h3>
+    <div id="scrollList" class="list-group">
+        <div class="list-group-item">item 1</div>
+        <div class="list-group-item">item 2</div>
+        <div class="list-group-item">item 3</div>
+        <div class="list-group-item">item 4</div>
+        <div class="list-group-item">item 5</div>
+        <div class="list-group-item">item 6</div>
+        <div class="list-group-item">item 7</div>
+        <div class="list-group-item">item 8</div>
+        <div class="list-group-item">item 9</div>
+        <div class="list-group-item">item 10</div>
+        <div class="list-group-item">item 11</div>
+        <div class="list-group-item">item 12</div>
+        <div class="list-group-item">item 13</div>
+        <div class="list-group-item">item 14</div>
+        <div class="list-group-item">item 15</div>
+        <div class="list-group-item">item 16</div>
+        <div class="list-group-item">item 17</div>
+        <div class="list-group-item">item 18</div>
+        <div class="list-group-item">item 19</div>
+        <div class="list-group-item">item 20</div>
+    </div>
+
+    <h2>Example 12</h2>
+    <h3>Events</h3>
+    <p>See in the console</p>
+
+    <ul id="eventsList1">
+        <li>foo 1</li>
+        <li>foo 2</li>
+        <li>foo 3</li>
+    </ul>
+
+    <ul id="eventsList2">
+        <li>bar 1</li>
+        <li>bar 2</li>
+        <li>bar 3</li>
+    </ul>
+
+    <h2>Example 13</h2>
+    <h3>Store</h3>
+    <ul id="storage">
+        <li data-id="1">order</li>
+        <li data-id="2">save</li>
+        <li data-id="3">restore</li>
+    </ul>
 </div>
 
 <script type="text/javascript" src="../scalajs-sortable-demos-fastopt.js"></script>
