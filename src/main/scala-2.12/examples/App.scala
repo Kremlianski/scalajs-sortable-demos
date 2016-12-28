@@ -8,7 +8,6 @@ import org.scalajs.dom
 import org.scalajs.dom._
 import org.scalajs.dom.raw.HTMLElement
 
-import js.JSConverters._
 import scala.scalajs.js.{Function1, UndefOr}
 
 object App {
@@ -205,7 +204,7 @@ object App {
 
   val get: js.Function1[Sortable, js.Array[String]] = { (sortable: Sortable) => {
 
-
+    import js.JSConverters._ //this adds additional 30kB :((
 
     val order = window.localStorage.getItem(sortable.option("group").name.asInstanceOf[String])
     order match {
