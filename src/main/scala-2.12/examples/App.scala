@@ -15,16 +15,19 @@ object App {
   def main(): Unit = {
 
     //example1
-    new Sortable(dom.document.getElementById("items"), null)
+    Sortable(dom.document.getElementById("items"))
 
 
     //example2
-    new Sortable(dom.document.getElementById("bar"), js.Dictionary("group" -> "bar", "animation" -> 100))
+    new Sortable(dom.document.getElementById("bar"), js.Dictionary(
+      "group" -> "bar",
+      "animation" -> 100
+    ))
     new Sortable(dom.document.getElementById("foo"), js.Dictionary(
       "group" -> "foo",
       "animation" -> 100
     ))
-    val s = new Sortable(dom.document.getElementById("qux"), js.Dictionary(
+    new Sortable(dom.document.getElementById("qux"), js.Dictionary(
       "group" -> js.Dictionary(
         "name" -> "qux",
         "put" -> js.Array("foo", "bar")),
@@ -145,13 +148,13 @@ object App {
     // example 10
     // force callback
     new Sortable(dom.document.getElementById("foo2"), js.Dictionary(
-      "group" -> "foo2",
-      "animation" -> 100,
-      "forceFallback" -> true,
-      "fallbackClass" -> "good"
+    "group" -> "foo2",
+    "animation" -> 100,
+    "forceFallback" -> true,
+    "fallbackClass" -> "good"
 
-    ))
-  }
+  ))
+
 
   //example11
   //Scroll
@@ -244,4 +247,4 @@ object App {
   Sortable(dom.document.getElementById("storage"), storeProps)
 
 
-}
+}}
