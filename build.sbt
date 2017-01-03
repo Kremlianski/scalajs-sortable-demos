@@ -12,7 +12,7 @@ scalaVersion := "2.12.1"
 
 libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.1",
-  "net.scalapro" %%% "sortable-js-facade" % "0.2-SNAPSHOT"
+  "net.scalapro" %%% "sortable-js-facade" % "0.2.1"
 )
 
 jsDependencies ++= Seq(
@@ -20,5 +20,5 @@ jsDependencies ++= Seq(
     / "1.4.2/Sortable.js" minified "Sortable.min.js"
 )
 
-resolvers +=
-  "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
+//resolvers +=
+//  "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
