@@ -36,11 +36,11 @@ object App {
     )
 
     //example3
-    //only with 1.5.0
+    //with 1.6.0
     val pull: js.Function2[Sortable, Sortable, js.Any] = { (to: Sortable, from: Sortable) => {
 
       from.el.children.length match {
-        case x if x > 2 => true
+        case x if x > 3 => true
         case _ => "clone"
       }
     }
