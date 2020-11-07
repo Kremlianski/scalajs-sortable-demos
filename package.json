@@ -1,0 +1,22 @@
+{
+  "name": "scalajs-sortable-demos",
+  "version": "1.0.0",
+  "description": "##See the [Demos for this code](http://projects.scalapro.net/sortable-js-facade/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kremlianski/scalajs-sortable-demos.git"
+  },
+  "author": "Kremlianski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kremlianski/scalajs-sortable-demos/issues"
+  },
+  "homepage": "https://github.com/Kremlianski/scalajs-sortable-demos#readme",
+  "dependencies": {
+    "sortablejs": "^1.12.0"
+  }
+}

@@ -4,3 +4,4 @@ project/project/
 project/target/
 root/
 src/main/main.iml
+/node_modules/

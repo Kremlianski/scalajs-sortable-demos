@@ -1,23 +1,27 @@
-lazy val root = project
-  .enablePlugins(ScalaJSPlugin)
+ThisBuild / scalaVersion := "2.13.3"
 
-enablePlugins(WorkbenchPlugin)
+lazy val root = (project in file("."))
+  .settings (
 
-name := "scalajs-sortable-demos"
+    name := "scalajs-sortable-demos",
 
-version := "0.2"
+      version := "0.3",
 
-scalaVersion := "2.12.1"
+scalaVersion := "2.13.3",
 
 
 libraryDependencies ++= Seq(
-  "org.scala-js" %%% "scalajs-dom" % "0.9.1",
-  "net.scalapro" %%% "sortable-js-facade" % "0.2.1"
-)
+  "org.scala-js" %%% "scalajs-dom" % "1.0.0",
+  "net.scalapro" %%% "sortable-js-facade" % "1.0.0"
+),
 
 jsDependencies ++= Seq(
   "org.webjars.bower" % "github-com-RubaXa-Sortable" % "1.4.2"
     / "1.4.2/Sortable.js" minified "Sortable.min.js"
 )
+).enablePlugins(ScalaJSPlugin, JSDependenciesPlugin)
+
+
+
 
 
